@@ -1,6 +1,6 @@
 let token=localStorage.getItem("token")
 if (!token){
-    window.location.href="https://github.com/theDevsharma12/juspace/blob/main/login.html"
+    window.location.href="/juspace/login.html"
 }
 let firstname=localStorage.getItem("firstname")
 let username=document.getElementById("username")
