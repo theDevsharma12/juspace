@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+:root {
+    --main-font: "Nunito", sans-serif;
+    --green: #22c55e;
+    --bg-color: #040b17;
+    --secondry-color: #0f1726;
+}
+
+/*****************/
+/* Reset default */
+/*****************/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+    color: #fff;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    outline: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input {
+    padding: 1.2rem;
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*****************/
+/* Header */
+/*****************/
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 1.6rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2.2rem;
+    background-color: var(--secondry-color);
+    font-size: 2rem;
+    border-radius: 1.6rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
+        inset 1px 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-c ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.2rem;
+}
+
+.nav-c ul li {
+    font-weight: 600;
+}
+
+.nav-c li a,
+.sm-nav li a {
+    color: #fff;
+    transition: ease-in-out 0.3s all;
+}
+
+.nav-c li a:hover,
+.sm-nav li a:hover {
+    color: var(--green);
+    transition: ease-in-out 0.3s all;
+}
+
+nav #hamburger-menu {
+    height: 4rem;
+    width: 4rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+nav #hamburger-menu span {
+    position: absolute;
+    display: block;
+    height: 0.2rem;
+    width: 3rem;
+    background-color: var(--green);
+    border-radius: 2.4rem;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+nav.active #hamburger-menu span {
+    transform: translateY(0) rotate(-45deg);
+    transition: 0.5s;
+}
+
+nav #hamburger-menu::before {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 3rem;
+    background-color: var(--green);
+    border-radius: 2.4rem;
+    transform: translateY(-1rem);
+    box-shadow: 0 1rem var(--green);
+    transition: 0.5s;
+}
+
+nav.active #hamburger-menu::before {
+    transform: translateY(0) rotate(45deg);
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+nav .side-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -35rem;
+    width: 35rem;
+    background-color: #0f1726;
+    padding: 7.2rem 6rem 0;
+    border-left: #22c55e 0.2rem solid;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 5;
+    border-radius: 1.2rem;
+    overflow-y: scroll;
+}
+
+nav .side-nav::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: 0.5rem;
+}
+
+nav .side-nav::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 1rem;
+    border: 0.4rem solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+nav .side-nav::-webkit-scrollbar-thumb:hover {
+    background: #0e7b1e;
+}
+
+nav.active .side-nav {
+    transform: translateX(-35rem);
+    opacity: 1;
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+
+.side-nav ul {
+    margin-left: 1.8rem;
+    margin-bottom: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.side-nav ul a {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.side-nav li {
+    position: relative;
+    z-index: 6;
+}
+
+.side-nav ul li::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+    content: "";
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: var(--green);
+    z-index: 10;
+    border-radius: 50%;
+    transform: translateY(-60%);
+    opacity: 0;
+    transition: ease-in 0.2s;
+}
+
+.side-nav ul li:hover::before {
+    opacity: 1;
+    transition: ease-in 0.2s;
+}
+
+.side-nav .log-out-btn {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.side-nav .log-out-btn::after {
+    position: absolute;
+    top: -4rem;
+    left: -5rem;
+    content: "";
+    height: 0.1rem;
+    width: 120%;
+    background-color: white;
+}
+/* ------------Main------------ */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12rem 18rem;
+}
+.heading{
+    text-align: center;
+}
+.main-heading{
+    margin-bottom: 30px;
+    color: #22c55e;
+}
+.main-heading p{
+    color: #999;
+}
+.sub-heading{
+    margin-bottom: 28px;
+    margin-top: 26px;
+    font-size: 20px;
+}
+.club-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: .8rem;
+    background-color: #0F1726;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: var(--secondary-color) 1px solid;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+    border-bottom: 2px solid #0f1726;
+}
+.card a{
+    display: flex;
+    flex-direction: row;
+}
+.card:hover{
+    border-bottom: 2px solid #22c55e;
+}
+.card img{
+    height: 8rem;
+    pointer-events: none;
+    margin-right: 20px;
+}
+.card p{
+    font-size: 15px;
+    color: #999;
+}
+
+@media(max-width:1310px){
+    .club-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .main{
+        margin: 12rem 16rem;
+    }
+}
+@media(max-width:1025px){
+    .main{
+        margin: 12rem 12rem;
+    }
+}
+@media(max-width:875px){
+    .main{
+        margin: 12rem 6rem;
+    }
+}
+@media(max-width:750px){
+    .club-container{
+        grid-template-columns: 1fr ;
+    }
+    .main{
+        margin: 12rem 1rem;
+    }
+}
