@@ -60,5 +60,6 @@ let logout=document.getElementById("logout")
 logout.addEventListener("click",async (e)=>{
     e.preventDefault()
     localStorage.removeItem("token")
+    
     window.location.href="/juspace/login.html"
 })
