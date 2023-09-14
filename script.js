@@ -1,6 +1,6 @@
 let token=localStorage.getItem("token")
 if (!token){
-    window.location.href="/login.html"
+    window.location.href="login.html"
 }
 let firstname=localStorage.getItem("firstname")
 let username=document.getElementById("username")
@@ -61,5 +61,5 @@ logout.addEventListener("click",async (e)=>{
     e.preventDefault()
     localStorage.removeItem("token")
     
-    window.location.href="/login.html"
+    window.location.href="login.html"
 })
