@@ -61,5 +61,5 @@ logout.addEventListener("click",async (e)=>{
     e.preventDefault()
     localStorage.removeItem("token")
     
-    window.location.href="login.html"
+    window.location.href="/login.html"
 })
