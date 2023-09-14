@@ -21,5 +21,7 @@ login.addEventListener("click",async (e)=>{
       console.log(result)
       localStorage.setItem("token",result.token)
       
-      window.location.href="juspace.tech/juspace/login.html"
+      window.location.href="juspace.tech/login.html"
 })
+
+
