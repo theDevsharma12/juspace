@@ -1,6 +1,8 @@
 /* --FONT-- */
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 
 :root{
     --bg-color:#040B17;
@@ -15,6 +17,7 @@ body{
     font-family: var(--main-font);
     color: #fff;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -42,6 +45,17 @@ a{
     justify-content: center;
 }
 /* --------------------------------------------------- */
+.sm-nav ul button{
+    border: none;
+    background-color: #040B17;
+    color: #fff;
+    font-size: 20px;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+.sm-nav ul button:hover{
+    color: #22C55E;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -87,15 +101,8 @@ nav{
     color: var(--green);
     transition: ease-in-out .3s all;
 }
-/* .nav-r i{
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-}
-.nav-r i:hover{
-    
-    transition: ease-in-out .2s all;
-} */
+
+
 /* --------------------------------------------------- */
 
 nav #hamburger-menu {
@@ -237,15 +244,49 @@ nav.active .side-nav {
 /* --------------------------------------------------- */
 main{
     padding-top: 5%;
-    padding-left: 35px;
+    min-height: 100vh;
 }
+
+.subjects-button-container{
+    margin-top: 1rem;
+    
+    height: 40px;
+    /* position: sticky;
+    top: 100px;
+    z-index: -100; */
+}
+
+.subjects-button-container button{
+    width: 16%;
+    height: 33px;
+    margin: 1%;
+    background-color: #0F1726;
+    color: #fff;
+    border: none;
+    border: #575757ce 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.subjects-button-container button:hover{
+    border: #0e7b1e 1px solid;
+}
+
 .pyq-container{
+    z-index: 100;
     text-align: center;
     color: var(--green);
     font-size: 1.2rem;
 }
+.container{
+    margin-top: 3rem;
+    /* background-color: #0F1726;
+    position: sticky;
+    top: 0px */
+}
 .pyq-container h1 {
-    margin: 4rem 0 3rem;
+    margin: 2rem 0 3rem;
 }
 .pyq-sub-container{
     color: #fff;
@@ -328,7 +369,6 @@ main{
 }
 .pyq-box:hover{
     color: var(--green);
-    /* border: 1px solid var(--green); */
 }
 
 @media(max-width:1025px){
@@ -337,10 +377,10 @@ main{
     }
 }
 @media(max-width:770px){
-    main{
+    /* main{
         padding-left: 30px;
         padding-left: 16px;
-    }
+    } */
 }
 @media(max-width:768px){
     main{
@@ -363,12 +403,21 @@ main{
         gap: 3.6rem;
     }
     .pyq-container h1 {
-        margin: 3rem 0 2rem;
+        margin: 1rem;
     }
 }
 @media(max-width:440px){
     main{
         padding-top: 18%;
+    }
+    .subjects-button-container button{
+        width: 16%;
+        height: 33px;
+        margin: .5%;
+    }
+    .subjects-button-container {
+        height: 20px;
+        top: 80px;
     }
     .pyq-container{
         font-size: .8rem;
@@ -383,7 +432,14 @@ main{
         margin-top: 1rem;
         width: 95%;
     }
+    .sm-nav {
+        margin-bottom: -1.4rem;
+    }
     .sm-nav ul {
         gap: 2rem;
+    }
+    .sm-nav ul li{
+        font-size: 18px!important;
+
     }
 }
