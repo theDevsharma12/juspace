@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./pyq-page-css.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -49,91 +49,612 @@
     </nav>
 </header>
 <!-- --------------------------------------------------------------------------------------------- -->
-
     <main class="pyq-container">
-        <h1>Previous year questions -- B.Tech. CSE</h1>
-        <!-- ----------------------------------------------------------- -->
-        <div class="sm-nav">
-            <ul>
-                <li style="--i:0;" class="Study-material active">Insem-1</li>
-                <li style="--i:1;" class="Pyq">Insem-2</li>
-                <li style="--i:2;" class="Assignment">Endsem</li>
-            </ul>
+        <div class="subjects-button-container">
+            <a href="#first">
+                <button class="filter-button active">First</button>
+            </a>
+            <a href="#second">
+                <button class="filter-button">Second</button>
+            </a>
+            <a href="#third">
+                <button class="filter-button">Third</button>
+            </a>
+            <a href="#fourth">
+                <button class="filter-button">Fourth</button>
+            </a>
+            <a href="#fifth">
+                <button class="filter-button">Fifth</button>
+            </a>
         </div>
-
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="first"></div>
         <div class="container">
-            <div class="slider">
-                <div class="pyq-sub-container">
-                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
-                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
-                        <div class="pyq-box">
-                            <div>1. <span>Em-1 2020</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
-                        <div class="pyq-box">
-                            <div>2. <span>Em-1 2021</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
-                        <div class="pyq-box">
-                            <div>3. <span>Em-1 2022</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- ----------------------------------------------------------- -->
-                <div class="pyq-sub-container">
-                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
-                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
-                        <div class="pyq-box">
-                            <div>1. <span>Em-1 2020</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
-                        <div class="pyq-box">
-                            <div>2. <span>Em-1 2021</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
-                        <div class="pyq-box">
-                            <div>3. <span>Em-1 2022</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- ----------------------------------------------------------- -->
-                <div class="pyq-sub-container">
-                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
-                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
-                        <div class="pyq-box">
-                            <div>1. <span>Em-1 2020</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
-                        <div class="pyq-box">
-                            <div>2. <span>Em-1 2021</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
-                        <div class="pyq-box">
-                            <div>3. <span>Em-1 2022</span></div>
-                            <div><i class='bx bx-right-arrow-alt' ></i></div>
-                        </div>
-                    </a>
-                </div>
-        <!-- ----------------------------------------------------------- -->
+            <h1>First</h1>
+            <div class="sm-nav">
+                <ul>
+                    <button onclick="myFunction1()">One</button>
+                    <button onclick="myFunction2()">Two</button>     
+                    <button onclick="myFunction3()">Three</button>
+                </ul>
             </div>
+            <div id="myDIV1">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-1 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+                <!-- ----------------------------------------------------------- -->
+            <div id="myDIV2" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-2 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                <!-- ----------------------------------------------------------- -->
+            <div id="myDIV3" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-3 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+            <div id="second"></div>
         </div>
+    <!-- ----------------------------------------------------------- -->
+        <div class="container">
+            <h1>Second</h1>
+            <div class="sm-nav">
+                <ul>
+                    <button onclick="myFunction4()">One</button>
+                    <button onclick="myFunction5()">Two</button>     
+                    <button onclick="myFunction6()">Three</button>
+                </ul>
+            </div>
+            <div id="myDIV4">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-1 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+                <!-- ----------------------------------------------------------- -->
+            <div id="myDIV5" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-2 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                <!-- ----------------------------------------------------------- -->
+            <div id="myDIV6" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-3 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+            <div id="third"></div>
+             <!-- ----------------------------------------------------------- -->
+        </div>
+    <!-- ----------------------------------------------------------------------- -->
+        <div class="container">
+                <h1>third</h1>
+                <div class="sm-nav">
+                    <ul>
+                        <button onclick="myFunction7()">One</button>
+                        <button onclick="myFunction8()">Two</button>     
+                        <button onclick="myFunction9()">Three</button>
+                    </ul>
+                </div>
+                <div id="myDIV7">
+                    <div class="pyq-sub-container">
+                        <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                        <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                            <div class="pyq-box">
+                                <div>1. <span>Em-1 2020</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                            <div class="pyq-box">
+                                <div>2. <span>Em-1 2021</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                            <div class="pyq-box">
+                                <div>3. <span>Em-1 2022</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>   
+                    <!-- ----------------------------------------------------------- -->
+                <div id="myDIV8" style="display: none;">
+                    <div class="pyq-sub-container">
+                        <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                        <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                            <div class="pyq-box">
+                                <div>1. <span>Em-2 2020</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                            <div class="pyq-box">
+                                <div>2. <span>Em-1 2021</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                            <div class="pyq-box">
+                                <div>3. <span>Em-1 2022</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                    <!-- ----------------------------------------------------------- -->
+                <div id="myDIV9" style="display: none;">
+                    <div class="pyq-sub-container">
+                        <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                        <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                            <div class="pyq-box">
+                                <div>1. <span>Em-3 2020</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                            <div class="pyq-box">
+                                <div>2. <span>Em-1 2021</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                            <div class="pyq-box">
+                                <div>3. <span>Em-1 2022</span></div>
+                                <div><i class='bx bx-right-arrow-alt' ></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+            <div id="fourth"></div>
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="container">
+            <h1>Fourth</h1>
+            <div class="sm-nav">
+                <ul>
+                    <button onclick="myFunction10()">One</button>
+                    <button onclick="myFunction11()">Two</button>     
+                    <button onclick="myFunction12()">Three</button>
+                </ul>
+            </div>
+            <div id="myDIV10">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-1 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+                <!-- ----------------------------------------------------------- -->
+            <div id="myDIV11" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-2 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------- -->
+            <div id="myDIV12" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-3 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>  
+            <div id="fifth"></div>
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="container">
+            <h1>fifth</h1>
+            <div class="sm-nav">
+                <ul>
+                    <button onclick="myFunction13()">One</button>
+                    <button onclick="myFunction14()">Two</button>     
+                    <button onclick="myFunction15()">Three</button>
+                </ul>
+            </div>
+            <div id="myDIV13">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-1 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+            <!-- ----------------------------------------------------------- -->
+            <div id="myDIV14" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-2 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------- -->
+            <div id="myDIV15" style="display: none;">
+                <div class="pyq-sub-container">
+                    <!-- <h3 class="sub-name">Em - 2 </h3> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1-vGsIH03CcppQCe63CP7fZifO-qM9tLc/view">
+                        <div class="pyq-box">
+                            <div>1. <span>Em-3 2020</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1wxwSqcv-KHHB_SI7-siSNh5csd3IpM8R/view">
+                        <div class="pyq-box">
+                            <div>2. <span>Em-1 2021</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1TnZKypzhtm6MMDoklVb5arFszIkab7XY/view?usp=sharing">
+                        <div class="pyq-box">
+                            <div>3. <span>Em-1 2022</span></div>
+                            <div><i class='bx bx-right-arrow-alt' ></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>  
+        </div>
+        <!-- --------------------------------------------- -->
     </main>
      
 
-    <script src="app.js"></script>
+    <script>
+        //  var divs = ["Menu1", "Menu2", "Menu3"];
+        // var visibleDivId = null;
+        // function toggleVisibility(divId) {
+        //   if(visibleDivId === divId) {
+        //     //visibleDivId = null;
+        //   } else {
+        //     visibleDivId = divId;
+        //   }
+        //   hideNonVisibleDivs();
+        // }
+        // function hideNonVisibleDivs() {
+        //   var i, divId, div;
+        //   for(i = 0; i < divs.length; i++) {
+        //     divId = divs[i];
+        //     div = document.getElementById(divId);
+        //     if(visibleDivId === divId) {
+        //       div.style.display = "block";
+        //     } else {
+        //       div.style.display = "none";
+        //     }
+        //   }
+        // }
+
+        function myFunction1() {
+            document.getElementById("myDIV1").style.display = "block";
+            document.getElementById("myDIV2").style.display = "none";
+            document.getElementById("myDIV3").style.display = "none";            
+        }
+            
+        function myFunction2() {
+            document.getElementById("myDIV1").style.display = "none";
+            document.getElementById("myDIV2").style.display = "block";
+            document.getElementById("myDIV3").style.display = "none";
+        }
+            
+        function myFunction3() {
+            document.getElementById("myDIV1").style.display = "none";
+            document.getElementById("myDIV2").style.display = "none";
+            document.getElementById("myDIV3").style.display = "block";
+        }
+
+        // ------------------------
+
+        function myFunction4() {
+            document.getElementById("myDIV4").style.display = "block";
+            document.getElementById("myDIV5").style.display = "none";
+            document.getElementById("myDIV6").style.display = "none";
+        }
+            
+        function myFunction5() {
+            document.getElementById("myDIV4").style.display = "none";
+            document.getElementById("myDIV5").style.display = "block";
+            document.getElementById("myDIV6").style.display = "none";   
+        }
+            
+        function myFunction6() {
+            document.getElementById("myDIV4").style.display = "none";
+            document.getElementById("myDIV5").style.display = "none";
+            document.getElementById("myDIV6").style.display = "block";
+        }
+        // ------------------------
+
+        function myFunction7() {
+            document.getElementById("myDIV7").style.display = "block";
+            document.getElementById("myDIV8").style.display = "none";
+            document.getElementById("myDIV9").style.display = "none";
+        }
+            
+        function myFunction8() {
+            document.getElementById("myDIV7").style.display = "none";
+            document.getElementById("myDIV8").style.display = "block";
+            document.getElementById("myDIV9").style.display = "none";   
+        }
+            
+        function myFunction9() {
+            document.getElementById("myDIV7").style.display = "none";
+            document.getElementById("myDIV8").style.display = "none";
+            document.getElementById("myDIV9").style.display = "block";
+        }
+        // ------------------------
+
+        function myFunction10() {
+            document.getElementById("myDIV10").style.display = "block";
+            document.getElementById("myDIV11").style.display = "none";
+            document.getElementById("myDIV12").style.display = "none";
+        }
+            
+        function myFunction11() {
+            document.getElementById("myDIV10").style.display = "none";
+            document.getElementById("myDIV11").style.display = "block";
+            document.getElementById("myDIV12").style.display = "none";   
+        }
+            
+        function myFunction12() {
+            document.getElementById("myDIV10").style.display = "none";
+            document.getElementById("myDIV11").style.display = "none";
+            document.getElementById("myDIV12").style.display = "block";
+        }
+        // ------------------------
+
+        function myFunction13() {
+            document.getElementById("myDIV13").style.display = "block";
+            document.getElementById("myDIV14").style.display = "none";
+            document.getElementById("myDIV15").style.display = "none";
+        }
+            
+        function myFunction14() {
+            document.getElementById("myDIV13").style.display = "none";
+            document.getElementById("myDIV14").style.display = "block";
+            document.getElementById("myDIV15").style.display = "none";   
+        }
+            
+        function myFunction15() {
+            document.getElementById("myDIV13").style.display = "none";
+            document.getElementById("myDIV14").style.display = "none";
+            document.getElementById("myDIV15").style.display = "block";
+        }
+
+
+        // ---------------------------
+
+         const navMenu = document.querySelector("nav");
+         const hamburgerMenu = document.getElementById("hamburger-menu");
+         const sideNav = document.querySelector(".side-nav");
+         const main = document.querySelector(".main");
+
+         hamburgerMenu.onclick = () => {
+             navMenu.classList.toggle("active");
+         };
+
+        //   let activeBtn = document.querySelector(".sm-nav .active");
+        //   let btnsPYQ = document.querySelectorAll(".sm-nav li");
+        //   let slider = document.querySelector(".slider");
+        //   const container = document.querySelector(".container");
+    
+        //  function disableScroll() {
+        //      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          
+        //      window.onscroll = function() {
+        //          window.scrollTo(scrollLeft, scrollTop);
+        //      };
+        //  }
+    
+        //  function enableScroll() {
+        //      window.onscroll = function() {};
+        //  }
+    
+        //  sideNav.onmouseenter = () => {
+        //      disableScroll();
+        //  }
+    
+        //  sideNav.onmouseleave = () => {
+        //      enableScroll();
+        //  }
+    
+        //  btnsPYQ.forEach(btn => {
+        //      btn.addEventListener("click", event => {
+        //          activeBtn.classList.remove("active");
+        //          event.target.classList.add("active");
+        //          activeBtn = event.target;
+                 
+        //          let i = getComputedStyle(event.target).getPropertyValue('--i');
+        //          slider.style.transform = `translateX(calc(-${container.offsetWidth}px * ${i}))`;
+        //      });
+        //  });
+
+    </script>
 </body>
 </html>
