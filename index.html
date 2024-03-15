@@ -423,23 +423,28 @@
             <div class="faq-section-container">
                 <article class="form-container">
                     <h2>Contact Us</h2>
-                    <form action="">
+                    
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="8387466e-f58f-45f2-9662-90ae4603844d">
+
                         <div>
                             <label for="name">Name</label>
-                            <input id="name" type="text" required>
+                            <input id="name" type="text" name="name" required>
                         </div>
     
                         <div>
                             <label for="email">Email</label>
-                            <input id="email" type="email" required>
+                            <input id="email" type="email" name="email" required>
                         </div>
     
                         <div>
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
+                            <textarea id="message" rows="5" name="message" required></textarea>
                         </div>
-    
-                        <input id="faq-submit-btn" type="button" value="Click to Submit">
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <input id="faq-submit-btn" type="submit" value="Click to Submit">
                     </form>
                 </article>
     
@@ -514,7 +519,7 @@
         <img class="footer-banner" src="images/JUSPACE.png">
     </footer>
     <!-- ------------------------------------------------------------------------- -->
-
+<script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>
