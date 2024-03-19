@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUSpace</title>
+    <title>JU-Space</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
@@ -40,7 +40,7 @@
         <nav>
             <div class="nav-l">
                 <span class="logo">
-                    JuSpace
+                    JU-Space
                 </span>
             </div>
             <div class="nav-c">
@@ -94,7 +94,7 @@
                     <div>
                         <div class="welcome-text">
                             <h3 id="username">Hi! Shubham<img class="intro-svg" src="./images/chevron-down.svg"> </h3>
-                            <h1>Welcome to <span>JuSpace</span></h1>
+                            <h1>Welcome to <span>JU-Space</span></h1>
                         </div>
                         <div class="text-scroll-container">
                             <p>We provide | &nbsp;</p>
@@ -134,6 +134,7 @@
             <!-- ------------------------------------------------------------ -->
             <div id="features"></div>
             <!-- -----------------------------ABOUT US------------------------------- -->
+            <div id="about"></div>
             <div class="about">
                 
                 <div class="about--heading">
@@ -143,7 +144,7 @@
 
                 <div class="grid-container">
                     <div class="about-l">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repud iandae minima itaque eaque, enim dolores cumque modi asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repud facere explicabo nobis officiis magni adipisci ullam quis, nemo iandae minima itaque eaque, enim dolores cumque modi asperiores natus illum sapiente est?</p>
+                        <p>"Welcome to JU-Space.tech, your ultimate destination for academic excellence. We specialize in providing students with a comprehensive range of services, including previous year question papers (PYQS), assignment solutions, campus updates, networking opportunities, and curated study materials. Our platform is dedicated to empowering students with the resources they need to excel in their academic journey. Join us to unlock a world of knowledge and elevate your educational experience."</p>
                         <a href="#contact"><button class="contact-btn"><p>Contact us</p></button></a>
                     </div>
 
@@ -181,50 +182,39 @@
                                 <img class="illustration" src="images/illus3.png">
                             </div>
                             <div class="dropdowns">
-                            <!-- ------------------------------- -->
+                                <!-- ------------------------------- -->
                                 <div class="one">
-                                <select class="course">
-                                    <option value="">Course</option>
-                                    <option value="dog">Btech</option>
-                                    <option value="cat">BCA</option>
-                                    <option value="hamster">MCA</option>
-                                    <option value="parrot">Law</option>
-                                </select>
+                                    <select id="course" class="course" onchange="updateBranchOptions()">
+                                        <option value="">Course</option>
+                                        <option value="btech">Btech</option>
+                                        <option value="bca">BCA</option>
+                                    </select>
                                 </div>
                                 <!-- ------------------------------- -->
                                 <div class="two">
-                                <select class="branch">
-                                    <option value="">Branch</option>
-                                    <option value="dog">CSE SP</option>
-                                    <option value="cat">ECE</option>
-                                    <option value="hamster">Machenical</option>
-                                    <option value="parrot">Electrical</option>
-                                </select>
-                                <select class="year">
-                                    <option value="">Year</option>
-                                    <option value="dog">1st</option>
-                                    <option value="cat">2nd</option>
-                                    <option value="hamster">3rd</option>
-                                    <option value="parrot">4th</option>
-                                </select>
+                                    <select id="branch" class="branch" onchange="updateSubjectOptions()">
+                                        <option value="">Branch</option>
+                                    </select>
                                 </div>
                                 <!-- ------------------------------- -->
                                 <div class="three">
-                                <select class="subject">
-                                    <option value="">Subject</option>
-                                    <option value="dog">Java</option>
-                                    <option value="cat">C++</option>
-                                    <option value="hamster">DM</option>
-                                    <option value="parrot">EM-1</option>
-                                    <option value="parrot">OS</option>
-                                    <option value="parrot">AP</option>
-                                </select>
+                                    <select id="semester" class="semester" onchange="updateSubjectOptions()">
+                                        <option value="">Semester</option>
+                                    </select>
+                                </div>
+                                <!-- ------------------------------- -->
+                                <div class="four">
+                                    <select id="subject" class="subject">
+                                        <option value="">Subject</option>
+                                    </select>
                                 </div>
                                 <!-- ------------------------------- -->
                                 <div class="button">
-                                    <a href="./pyq-page-juspace/index.html"><button class="flex-row"><i class="fi fi-rr-search"></i>Search</button></a>
+                                    <button onclick="search()" class="flex-row"><i class="fi fi-rr-search"></i>Search</button>
                                 </div>
                             </div>
+                                
+                            
                         </div>
                     </div>
 
@@ -351,8 +341,8 @@
                         <i class="fi fi-rr-memo"></i>
                     </div>
                     <h3>Previous year paper</h3>
-                    <p>adsnjad sjdfbsdhfbs dhsdfsjc sj <br>
-                        jfdjndfd fdkjnv dfnvjkn
+                    <p>Ace Your Exams with PYQs<br>
+                        at Your Fingertips!
                     </p>
                 </div>
                </a>
@@ -362,8 +352,8 @@
                             <i class="fi fi-rs-book-open-cover"></i>
                         </div>
                         <h3>Assignments</h3>
-                        <p>adsnjad sjdfbsdhfbs dhsdfsjc sj <br>
-                            jfdjndfd fdkjnv dfnvjkn
+                        <p>Unlock Your Academic Potential with  <br>
+                            Expert Assignment Solutions!
                         </p>
                     </div>
                 </a>
@@ -374,8 +364,8 @@
                             <i class="fi fi-rr-bell"></i>
                         </div>
                         <h3>Notifications</h3>
-                        <p>adsnjad sjdfbsdhfbs dhsdfsjc sj <br>
-                            jfdjndfd fdkjnv dfnvjkn
+                        <p>Stay Ahead of the Curve: Latest Campus <br>
+                            News & Updates Await!
                         </p>
                     </div>
                 </a>
@@ -385,8 +375,8 @@
                             <i class="fi fi-rr-pencil"></i>
                         </div>
                         <h3>Study material</h3>
-                        <p>adsnjad sjdfbsdhfbs dhsdfsjc sj <br>
-                            jfdjndfd fdkjnv dfnvjkn
+                        <p>Empower Your Learning: <br>
+                            Explore Comprehensive Study Resources Here!
                         </p>
                     </div>
                 </a>
@@ -396,8 +386,8 @@
                             <i class="fi fi-rs-users"></i>
                         </div>
                         <h3>Networking</h3>
-                        <p>adsnjad sjdfbsdhfbs dhsdfsjc sj <br>
-                            jfdjndfd fdkjnv dfnvjkn
+                        <p>Forge Meaningful Connections:  <br>
+                            Networking Opportunities Await!
                         </p>
                     </div>
                 </a>
@@ -407,8 +397,8 @@
                             <i class="fi fi-rr-info"></i>
                         </div>
                         <h3>Information</h3>
-                        <p>adsnjad sjdfbsdhfbs dhsdfsjc sj <br>
-                            jfdjndfd fdkjnv dfnvjkn
+                        <p>Stay Informed, Stay Ahead:<br>
+                            Your Source for Website Updates and Features!
                         </p>
                     </div>
                 </a>
@@ -452,7 +442,7 @@
                     <h2>Frequently Asked Questions</h2>
                     <div class="faq">
                         <div class="faq--heading">
-                            <span>Will I be able to download the study material from JU SPACE ?</span>
+                            <span>◾Will I be able to download the study material from JU SPACE ?</span>
                             <button><i class='bx bx-chevron-right'></i></button>
                         </div>
                     
@@ -462,7 +452,7 @@
                     </div>
                     <div class="faq">
                         <div class="faq--heading">
-                            <span>How can I get my event updated on JU SPACE ?
+                            <span>◾How can I get my event updated on JU SPACE ?
                             </span>
                             <button><i class='bx bx-chevron-right'></i></button>
                         </div>
@@ -473,7 +463,7 @@
                     </div>
                     <div class="faq">
                         <div class="faq--heading">
-                            <span>How can I get my club / community to be displayed on JU SPACE ?</span>
+                            <span>◾How can I get my club / community to be displayed on JU SPACE ?</span>
                             <button><i class='bx bx-chevron-right'></i></button>
                         </div>
                     
@@ -494,7 +484,7 @@
         <div class="footer-container">
             <img class="logo" src="./logo.jpeg" alt="">
             <div class="social-container">
-                <p>The company is an edtech platform that offers study materials, including notes and previous papers, and networking tools to help students succeed academically and professionally.</p>
+                <p><JU-Space></JU-Space> is an edtech platform that offers study materials, including notes and previous papers, and networking tools to help students succeed academically and professionally.</p>
                 <ul class="social-links">
                     <li><a href=""><img src="images/icons/twitter.svg" alt=""></a></li>
                     <li><a href=""><img src="images/icons/insta.svg" alt=""></a></li>
@@ -504,14 +494,14 @@
             </div>
             <ul class="footer-links">
                 <li class="heading">COMPANY</li>
-                <li>About us</li>
+                <a href="/index.html#about"><li>About Us</li></a>
                 <a href="/privacypolicies.html"><li>Privacy policy</li></a>
                 <a href="/termsandcondition.html"><li>Terms & conditions</li></a>
             </ul>
             <ul class="footer-links">
                 <li class="heading">QUICK LINKS</li>
                 <a href="/index.html"><li>Home</li></a>
-                <li>About</li>
+                <a href="/index.html#about"><li>About</li></a>
                 <a href="/comming-soon/not-found-page.html"><li>Profile</li></a>
                 <a href="/index.html#contact"><li>Contact Us</li></a>
             </ul>
@@ -521,5 +511,130 @@
     <!-- ------------------------------------------------------------------------- -->
 <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="script.js"></script>
+    <script>
+        var branches = {
+            "btech": ["CSE", "CSE-Specialization","Mechanical","Electrical"],
+            "bca": ["Core", "Specialization"]
+        };
+    
+        var subjects = {
+            "CSE": {
+                "1": ["AP", "BEE","CS","EM-1","EVS","C++"],
+                "2": ["BEE", "EM-2","IC","JAVA","PS"],
+                "3": ["DM", "DSA","LifeSkill-1"],
+                "4": ["DM", "DSA","LifeSkill-1"],
+                "5": ["DM", "DSA","LifeSkill-1"],
+                "6": ["CC","Google Cloud"],
+                "7": ["DM", "DSA","LifeSkill-1"],
+                "8": ["DM", "DSA","LifeSkill-1"]
+            },
+            "CSE-Specialization": {
+                "1": ["AP", "BEE","CS","EM-1","EVS","C++","Samatrix"],
+                "2": ["BEE", "EM-2","IC","JAVA","PS","Samatrix"],
+                "3": ["DM", "DSA","LifeSkill-1","Samatrix"],
+                "4": ["DM", "DSA","LifeSkill-1","Samatrix"],
+                "5": ["DM", "DSA","LifeSkill-1","Samatrix"],
+                "6": ["CC","Google-Cloud","Samatrix"],
+                "7": ["DM", "DSA","LifeSkill-1","Samatrix"],
+                "8": ["DM", "DSA","LifeSkill-1","Samatrix"]
+            },
+            "Electrical": {
+                "1": ["Digital Electronics1", "Signals and Systems1", "Analog Circuits1"],
+                "2": ["Digital Electronics2", "Signals and Systems2", "Analog Circuits2"],
+                "3": ["Digital Electronics3", "Signals and Systems3", "Analog Circuits3"]
+            },
+            "Mechanical": {
+                "1": ["Thermodynamics1", "Fluid Mechanics1", "Machine Design1"],
+                "2": ["Thermodynamics2", "Fluid Mechanics2", "Machine Design2"],
+                "3": ["Thermodynamics3", "Fluid Mechanics3", "Machine Design3"]
+            },
+            "Core": {
+                "1": ["Thermodynamics1", "Fluid Mechanics1", "Machine Design1"],
+                "2": ["Thermodynamics2", "Fluid Mechanics2", "Machine Design2"],
+                "3": ["Thermodynamics3", "Fluid Mechanics3", "Machine Design3"]
+            },
+            "Specialization": {
+                "1": ["Thermodynamics1", "Fluid Mechanics1", "Machine Design1"],
+                "2": ["Thermodynamics2", "Fluid Mechanics2", "Machine Design2"],
+                "3": ["Thermodynamics3", "Fluid Mechanics3", "Machine Design3"]
+            },
+            // Add subjects for other branches and semesters
+        };
+    
+        var semesters = {
+            "btech": ["1", "2", "3","4","5","6","7","8"],
+            "bca": ["1", "2", "3","4","5","6"]
+        };
+       
+        function updateBranchOptions() {
+            var course = document.getElementById("course").value;
+            var branchSelect = document.getElementById("branch");
+    
+            // Clear existing options
+            branchSelect.innerHTML = "<option value=''>Branch</option>";
+    
+            // Add options based on selected course
+            var branchOptions = branches[course];
+            if (branchOptions) {
+                branchOptions.forEach(function(branch) {
+                    var option = document.createElement("option");
+                    option.value = branch;
+                    option.text = branch;
+                    branchSelect.appendChild(option);
+                });
+            }
+    
+            // Populate semester dropdown based on selected course
+            var semesterSelect = document.getElementById("semester");
+            semesterSelect.innerHTML = "<option value=''>Semester</option>";
+            var semesterOptions = semesters[course];
+            if (semesterOptions) {
+                semesterOptions.forEach(function(semester) {
+                    var option = document.createElement("option");
+                    option.value = semester;
+                    option.text = semester;
+                    semesterSelect.appendChild(option);
+                });
+            }
+        }
+    
+        function updateSubjectOptions() {
+            var branch = document.getElementById("branch").value;
+            var semester = document.getElementById("semester").value;
+            var subjectSelect = document.getElementById("subject");
+    
+            // Clear existing options
+            subjectSelect.innerHTML = "<option value=''>Subject</option>";
+    
+            // Add options based on selected branch and semester
+            var subjectOptions = subjects[branch][semester];
+            if (subjectOptions) {
+                subjectOptions.forEach(function(subject) {
+                    var option = document.createElement("option");
+                    option.value = subject;
+                    option.text = subject;
+                    subjectSelect.appendChild(option);
+                });
+            }
+        }
+    
+        function search() {
+            var course = document.getElementById("course").value;
+            var branch = document.getElementById("branch").value;
+            var semester = document.getElementById("semester").value;
+            var subject = document.getElementById("subject").value;
+    
+            // Perform search based on selected options
+            if (course && branch && semester && subject) {
+                var url = "http://example.com/" + course + "/" + branch + "/" + semester + "/" + subject + ".html";
+                window.location.href = url;
+                // Modify this line to perform the search action (e.g., redirect to search results page)
+                console.log("Searching for:", course, branch, semester, subject);
+            } else {
+                alert("Please select all options before searching.");
+            }
+        }
+    
+    </script>
 </body>
 </html>
