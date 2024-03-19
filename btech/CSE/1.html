@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Selection</title>
+<style>
+    /* Add your CSS styling here */
+</style>
+</head>
+<body>
+    <label for="course">Select Course:</label>
+    <select id="course">
+        <option value="Btech">B.tech</option>
+        <option value="BCA">BCA</option>
+    </select>
+    <br>
+    <label for="branch">Select Branch:</label>
+    <select id="branch">
+        <option value="CS">CS</option>
+        <option value="ECE">ECE</option>
+        <option value="CS Specialization">CS Specialization</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="CORE">CORE</option>
+        <option value="Specialization">Specialization</option>
+    </select>
+    <br>
+    <label for="semester">Select Semester:</label>
+    <select id="semester">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <!-- Add options up to 8 for B.tech and up to 6 for BCA -->
+    </select>
+    <br>
+    <label for="subject">Select Subject:</label>
+    <select id="subject">
+        <!-- JavaScript will populate this dropdown based on user selection -->
+    </select>
+    <br>
+    <button onclick="populateSubjects()">Get Subjects</button>
+
+    <script>
+        function populateSubjects() {
+            var course = document.getElementById("course").value;
+            var branch = document.getElementById("branch").value;
+            var semester = document.getElementById("semester").value;
+            var subjectDropdown = document.getElementById("subject");
+
+            // Clear previous options
+            subjectDropdown.innerHTML = "";
+
+            // Subjects array based on user selection
+            var subjects = [];
+
+            // Populate subjects based on user selection
+            if (course === "Btech") {
+                if (branch === "CS") {
+                    if (semester === "1") {
+                        subjects = ["Java1", "C++1", "Python1"];
+                    } else if (semester === "2") {
+                        subjects = ["Java2", "C++2", "Python2"];
+                    } else if (semester === "3") {
+                        subjects = ["Java3", "C++3", "Python3"];
+                    }
+                    // Add more conditions for other branches within B.tech
+                }
+            } else if (course === "BCA") {
+                // Handle BCA subjects similarly to B.tech
+            }
+
+            // Add subjects to the dropdown
+            subjects.forEach(function(subject) {
+                var option = document.createElement("option");
+                option.text = subject;
+                subjectDropdown.add(option);
+            });
+        }
+    </script>
+</body>
+</html>
