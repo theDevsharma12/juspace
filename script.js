@@ -1,10 +1,3 @@
-let token=localStorage.getItem("token")
-if (!token){
-    window.location.href="login.html"
-}
-let firstname=localStorage.getItem("firstname")
-let username=document.getElementById("username")
-username.innerText=`Hi! ${firstname}`
 const navMenu = document.querySelector("nav");
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const sideNav = document.querySelector(".side-nav");
@@ -56,10 +49,3 @@ faqs.forEach(elem => {
         elem.classList.toggle("active");
     });
 });
-let logout=document.getElementById("logout")
-logout.addEventListener("click",async (e)=>{
-    e.preventDefault()
-    localStorage.removeItem("token")
-    
-    window.location.href="login.html"
-})
