@@ -971,11 +971,11 @@ footer .footer-links {
     transform: translateX(-52%);
 }
 
-.logo{
-    border-radius: 50%;
-    height: 20rem;
-}
 
+.logo{
+    height: 2.8rem;
+    margin-bottom: -4px;
+}
 /*****************/
 /* Responsive */
 /*****************/
