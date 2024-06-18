@@ -45,6 +45,10 @@ a{
     justify-content: center;
 }
 /* --------------------------------------------------- */
+.logo{
+    height: 2.8rem;
+    margin-bottom: -4px;
+}
 .sm-nav ul button{
     border: none;
     background-color: #040B17;
